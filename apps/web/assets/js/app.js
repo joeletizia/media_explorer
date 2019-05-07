@@ -11,6 +11,7 @@ import css from "../css/app.css"
 //
 import "phoenix_html"
 import "react-phoenix"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import local files
 //
