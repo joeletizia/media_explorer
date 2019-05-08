@@ -9,9 +9,10 @@ defmodule Web.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      WebWeb.Endpoint
+      WebWeb.Endpoint,
       # Starts a worker by calling: Web.Worker.start_link(arg)
       # {Web.Worker, arg},
+      {Absinthe.Subscription, [WebWeb.Endpoint]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

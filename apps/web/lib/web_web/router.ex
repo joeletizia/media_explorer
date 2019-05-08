@@ -13,6 +13,10 @@ defmodule WebWeb.Router do
     plug :accepts, ["json"]
   end
 
+  forward "/graphiql", Absinthe.Plug.GraphiQL,
+    schema: WebWeb.Schema,
+    socket: WebWeb.UserSocket
+
   scope "/", WebWeb do
     pipe_through :browser
 

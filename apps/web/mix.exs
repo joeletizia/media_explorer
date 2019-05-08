@@ -43,7 +43,8 @@ defmodule Web.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:react_phoenix, "~> 1.0.0"}
+      {:react_phoenix, "~> 1.0.0"},
+      {:absinthe_phoenix, "~> 1.4.0"}
     ]
   end
 end
