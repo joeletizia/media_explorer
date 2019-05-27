@@ -13,7 +13,7 @@ class AppRoot extends React.Component {
   render() {
     const cache = new InMemoryCache();
     const link = new HttpLink({
-      uri: 'http://localhost:4000/graphiql'
+      uri: '/graphiql'
     })
     const client = new ApolloClient({
       cache,
